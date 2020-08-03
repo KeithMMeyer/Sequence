@@ -1,0 +1,5 @@
+This interpreter will run Sequence code in a given file, with given input and output. Proper syntax is:
+
+		<Program File> [Input File] [Output File]
+
+Where the Program File is required and all others are optional. Input and Output default to standard in and out when not specified.

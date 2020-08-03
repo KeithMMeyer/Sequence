@@ -1,0 +1,29 @@
+1 8 0 2 2 		Set Cell Zero to eight
+4 2 3
+	3 0 1 6 2 2 2	Add four to Cell One; this will always set Cell One to four
+	4 2 3		as the cell will be cleared by the loop
+		3 0 1 2		Add two to Cell Two
+		3 0 1 1		Add three to Cell Three
+		3 0 1 1		Add three to Cell Four
+		3 0 1		Add one to Cell Five
+		4 6 0 3 2 2	Decrement the loop counter in Cell One
+	2 4		Loop till Cell One is zero; number of iterations is four
+	3 0 1		Add one to Cell Two
+	3 0 1		Add one to Cell Three
+	3 0 2 2		Subtract one from Cell Four
+	3 2 1		Add one to Cell Six
+	4 2 3 0 4 2 4	Move back to the first zero cell you find; this will
+                       		be Cell One which was cleared by the previous loop
+	4 2 2		Decrement the loop Counter in Cell Zero
+2 4                     Loop till Cell Zero is zero; number of iterations is eight
+
+3 2 0 4 4			Cell Two has value seventy-two which is 'H'
+3 0 2 2 2 2 0 4 4		Subtract three from Cell Three to get 'e'
+1 5 0 4 4 4 0 1 2 0 1 0 4 4	Likewise for 'llo' from Cell Three
+3 2 0 4 4			Cell Five is thirty-two for the space
+4 2 2 0 4 4			Subtract one from Cell Four to give a 'W'
+4 2 0 4 4			Cell Three was set to 'o' from the end of 'Hello'
+1 2 0 1 0 4 4			Cell Three for 'r'
+2 6 0 4 4 0 2 8 4		Cell Three for 'l' and 'd'
+3 2 0 1 0 4 4			Add one to Cell Five gives us an exclamation point
+3 0 1 2 0 4 4			And finally a newline from Cell Six
