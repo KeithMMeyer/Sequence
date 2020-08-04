@@ -70,4 +70,7 @@ The following is a Universal Turing machine based on BrainF\*ck code written by 
 
 The minimal test case for this program is b1b1bbb1c1c11111d (which is 98 49 98 49 98 98 98 49 99 49 99 49 49 49 49 49 100 in decimal ascii, which is how the Java interpreter accepts input) which will test all the 23 Turing machine instructions.
 
-Brainf\*ck is a tape-based esoteric language created in 1993 by Urban Müller. The sample Hello World program is modified from the Brainf\*ck code included on its [Esolang page](https://esolangs.org/wiki/brainfuck).
+---
+
+Brainf\*ck is a tape-based esoteric language created in 1993 by Urban Müller. The sample *Hello World* Sequence program is written based on the Brainf\*ck code included on its [Esolang page](https://esolangs.org/wiki/brainfuck). The Turing machine Sequence code is based on the Brainf\*ck code by [Daniel B Cristofani](http://www.hevanet.com/cristofd/brainfuck/utm.b).
+
