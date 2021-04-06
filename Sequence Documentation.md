@@ -2,7 +2,7 @@ Created by Keith Meyer
 
 # Sequence
 
-Sequence is a tape/cell-based language that is fully Turing-complete (and a Turing tarpit). It is inspired by Brainf\*ck, and uses a similar command set, but only uses only two symbols: the period and the space. All other characters are ignored and treated as comments. Unlike other languages that execute commands discretely, each command in Sequence depends upon the commands executed before it. Memory in Sequence is represented by an &quot;infinite&quot; tape, an sufficiently large array of bytes (at least 2E18 bytes) that are each initialized to zero. Memory is accessed using a data pointer (tape head) that starts at the zeroth byte and can move in either direction (to negative or positive positions).
+Sequence is a tape/cell-based language that is fully Turing-complete (and a Turing tarpit). It is inspired by Brainf\*ck, and uses a similar command set, but uses only two symbols: the period and the space. All other characters are ignored and treated as comments. Unlike other languages that execute commands discretely, each command in Sequence depends upon the commands executed before it. Memory in Sequence is represented by an &quot;infinite&quot; tape, an sufficiently large array of bytes (at least 2E18 bytes) that are each initialized to zero. Memory is accessed using a data pointer (tape head) that starts at the zeroth byte and can move in either direction (to negative or positive positions).
 
 ## Syntax
 
@@ -25,9 +25,9 @@ Block-based commands are listed below:
 
 | **Dot Representation\*** | **Ordinal Number\*** | **Command** | **Effective Command** |
 | --- | --- | --- | --- |
-| `x ` | `X 0` | No command (spacer) | \<none\> |
-| `x .` | `X 1` | Repeats command block X. | Increments pointer and repeats X. |
-| `x ..` | `X 2` | Repeats only last command of X. | Repeats only last command of X. |
+| `x ` | `X 0` | No command (spacer) | Executes X. |
+| `x .` | `X 1` | Repeats command block X. | Executes X, increments pointer, repeats X. |
+| `x ..` | `X 2` | Repeats only last command of X. | Executes X, repeats only last command of X. |
 | `. ...` | `1 3` | Copies byte from the left. | Increments pointer, moves pointer right, then copies. |
 | `. ....` | `1 4` | Copies byte from right. | Increments pointer, copies byte from right. |
 | `.. ...` | `2 3` | Begins loop if byte is nonzero, skips to matching 2 4 if zero. | Moves pointer right, begins loop if nonzero. |
